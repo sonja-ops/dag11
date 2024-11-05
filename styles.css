@@ -1,10 +1,49 @@
 /* External CSS */
 
+/* CSS VARIABLES */
+:root{
+--primaryColor:#00B295;
+--secundaryColor:#03F7EB;
+--accentColor:#C9DAEA;
+
+--sizingSmal:5px;
+--sizingMedium:8px;
+--sizinfLarg:20px;
+
+--primaryFontFamily:"Times";
+--secondaryFontFamily:"Helvetica";
+}
+
+/* GLOBAL CSS */
+.fullScreen {
+min-width: 100vh;
+}
+.Cardwith {
+  max-width: 300px;
+}
+.split {
+  width: 50%;
+}
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listNoDot {
+  list-style-type: none;
+}
 /* body is a CSS Selector */
 /* {} idicates a CSS Declaration */
 body {
   /* property:value; is a CSS Rule */
-  background-color: #fdfdfd;
+  background-color:var(--primaryColor);
   color: #0d0d0d;
 }
 
@@ -13,11 +52,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0;
+  padding:var(--sizingMedium);
 }
 
 .headerLogo {
-  padding: 8px;
+  padding: var(--sizingMedium);
   border: 2px solid black;
   border-radius: 50%;
 }
