@@ -18,27 +18,43 @@
 .fullScreen {
 min-width: 100vh;
 }
+
 .Cardwith {
   max-width: 300px;
 }
+
 .split {
   width: 50%;
 }
-.flexRowCenter {
+
+.flex {
   display: flex;
+}
+
+.jcCenter {
   justify-content: center;
+}
+
+.jsSpaceBetween {
+  justify-content: space-between;
+}
+
+.jcEnd {
+  justify-content: end;
+}
+
+.aiCenter {
   align-items: center;
 }
 
-.flexColCenter {
-  display: flex;
+.flexCol {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
 .listNoDot {
-  list-style-type: none;
+  list-style: none;
 }
+
 /* body is a CSS Selector */
 /* {} idicates a CSS Declaration */
 body {
@@ -49,10 +65,8 @@ body {
 
 /* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:var(--sizingMedium);
+  padding:var(--sizingMedium) 0;
+  border-bottom: var(--sizingSmal) solid var(--secundaryColor);
 }
 
 .headerLogo {
@@ -62,21 +76,14 @@ header {
 }
 
 ul {
-  display: flex;
-  justify-content: end;
-  gap: 15px;
-  list-style-type: none;
+  gap: var(--sizinfLarg);
   margin: 0;
   padding: 0;
 }
 
 /* MAIN */
-main {
-  height: 100vh;
-}
 
 /* FOOTER */
 footer {
-  display: flex;
-  justify-content: center;
+  border-top: var(--sizingSmal) solid var(--secundaryColor);
 }
